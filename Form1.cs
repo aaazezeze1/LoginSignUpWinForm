@@ -1,6 +1,4 @@
 // import database
-// make sure to install the NuGet package first
-// System.Data.OleDb by Microsoft
 using System.Data.OleDb;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;

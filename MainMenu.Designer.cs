@@ -52,9 +52,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(696, 450);
             Controls.Add(linkLabel1);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "MainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenu";
             ResumeLayout(false);
             PerformLayout();
