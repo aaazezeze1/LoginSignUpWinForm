@@ -28,12 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MainMenu";
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
+            linkLabel1 = new LinkLabel();
+            SuspendLayout();
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.BackColor = Color.Transparent;
+            linkLabel1.Font = new Font("Segoe UI", 72F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            linkLabel1.Location = new Point(67, 304);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(548, 128);
+            linkLabel1.TabIndex = 0;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "CLICK HERE";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
+            // MainMenu
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(696, 450);
+            Controls.Add(linkLabel1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "MainMenu";
+            Text = "MainMenu";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private LinkLabel linkLabel1;
     }
 }
