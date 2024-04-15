@@ -4,6 +4,11 @@ sign-up form using C# and Windows Forms"*. Made by Amazing Grace Cabiles from BS
 
 # Project Showcase
 
+Unhandled Exception (Visual Studio Bug)
+https://github.com/aaazezeze1/LoginSignUpWinForm/assets/81816019/9a6040c2-cae4-45f3-9682-2701397d55d1
+
+Background Process even after Closing (Visual Studio Bug)
+https://github.com/aaazezeze1/LoginSignUpWinForm/assets/81816019/f982c5ee-9166-469e-9b50-7de15e0ef1fb
 
 # What was used for this assignment
 1. Microsoft Visual Studio 2022 (.NET 8)
