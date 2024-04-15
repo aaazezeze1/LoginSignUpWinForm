@@ -40,4 +40,4 @@ and click on End task then run the program again.
 ***PS: I have tried running the program multiple times and sometimes it would work while it is open 
 multiple times in the background and when the password has to be inputted twice for verification.
 In other times though, I get an Unhandled Exception on the password verification and the program
-would not run because a "copy" is open meaning it didn't fully close which can be seen in the task manager ***
+would not run because a "copy" is open meaning it didn't fully close which can be seen in the task manager***
