@@ -4,6 +4,11 @@ sign-up form using C# and Windows Forms"*. Made by Amazing Grace Cabiles from BS
 
 # Project Showcase
 
+Unhandled Exception (Visual Studio Bug)
+https://github.com/aaazezeze1/LoginSignUpWinForm/assets/81816019/9a6040c2-cae4-45f3-9682-2701397d55d1
+
+Background Process even after Closing (Visual Studio Bug)
+https://github.com/aaazezeze1/LoginSignUpWinForm/assets/81816019/f982c5ee-9166-469e-9b50-7de15e0ef1fb
 
 # What was used for this assignment
 1. Microsoft Visual Studio 2022 (.NET 8)
@@ -36,6 +41,7 @@ and click on End task then run the program again.
 multiple times in the background and when the password has to be inputted twice for verification.
 In other times though, I get an Unhandled Exception on the password verification and the program
 would not run because a "copy" is open meaning it didn't fully close which can be seen in the task manager***
+<<<<<<< HEAD
 
 # Missing Features or Things To Improve
 1. Show a ***PROPER*** error if the username and password for that account already exists
