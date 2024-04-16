@@ -1,8 +1,10 @@
-// import database
+// Import the database
 using System.Data.OleDb;
+
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace LoginSignUp
 {
@@ -20,13 +22,13 @@ namespace LoginSignUp
         // Register
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            // Check if all fields are empty
-            if (UsernameTxtBox.Text == "" && PasswordTxtBox.Text == "" && CFPassTxtBox.Text == "")
+            // Check if username and password are both empty
+            if (string.IsNullOrWhiteSpace(UsernameTxtBox.Text) && string.IsNullOrWhiteSpace(PasswordTxtBox.Text))
             {
                 MessageBox.Show("Please enter a valid Username and Password", "Registration Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
             }
-            // Create an account if passwords matches the confirm password box
-            else if (PasswordTxtBox.Text == CFPassTxtBox.Text)
+            else if (UsernameTxtBox.Text != "" && PasswordTxtBox.Text != "" &&  PasswordTxtBox.Text == CFPassTxtBox.Text)
             {
                 con.Open();
                 // Send credentials to the database
@@ -53,6 +55,7 @@ namespace LoginSignUp
             }
         }
 
+        // Registration show password check box
         private void ShowPassCBox_CheckedChanged(object sender, EventArgs e)
         {
             if (ShowPassCBox.Checked)
@@ -89,13 +92,14 @@ namespace LoginSignUp
                 MessageBox.Show("Invalid Username or Password. Please Try Again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 // Clear the fields
-                UsernameTxtBox.Text = "";
-                PasswordTxtBox.Text = "";
-                UsernameTxtBox.Focus();
+                LUsernameTxtBox.Text = "";
+                LPasswordTxtBox.Text = "";
+                LUsernameTxtBox.Focus();
                 con.Close();
             }
         }
 
+        // Login show password check box
         private void LShowPassCBox_CheckedChanged(object sender, EventArgs e)
         {
             if (LShowPassCBox.Checked)
